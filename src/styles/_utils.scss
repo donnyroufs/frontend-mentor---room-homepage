@@ -11,6 +11,12 @@
 }
 
 @mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
   @media (min-width: 1440px) {
     @content;
   }
