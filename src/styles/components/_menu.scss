@@ -12,7 +12,7 @@
   }
 
   &__link {
-    font-weight: bold;
+    font-weight: 400;
     text-decoration: none;
     color: $black;
     font-size: pxToRem(12);
@@ -25,9 +25,19 @@
       font-size: pxToRem(16);
       margin-right: 2rem;
     }
+
+    @include desktop {
+      color: $white;
+    }
   }
 
   /*  TODO: animated border */
   &--active {
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
   }
 }

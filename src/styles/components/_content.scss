@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
 
-  font-size: clamp(12px, 3vw, 18px);
+  font-size: clamp(12px, 3vw, 16px);
   padding: 3rem 1.8rem;
 
   &__title {
@@ -13,7 +13,7 @@
   &__text {
     line-height: 1.7;
     color: $gray;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   &__cta {
@@ -31,5 +31,27 @@
 
   @include ipad-pro {
     padding: 8rem;
+  }
+
+  @include desktop {
+    flex: 2;
+    background: white;
+    padding: 0 4rem 3rem 4rem;
+  }
+
+  @include desktop-large {
+    &__title {
+      font-size: pxToRem(42);
+      margin-bottom: 2.5rem;
+    }
+
+    &__text {
+      font-size: pxToRem(18);
+    }
+    padding: 0 5rem 3rem 5rem;
+  }
+
+  @include desktop-xl {
+    padding: 0 7.5rem 3rem 7.5rem;
   }
 }

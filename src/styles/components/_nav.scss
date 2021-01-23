@@ -14,6 +14,10 @@
   }
 
   @include desktop {
+    order: 2;
+    background: transparent;
+    position: relative;
+    width: 100%;
     pointer-events: all;
     visibility: visible;
     opacity: 1;

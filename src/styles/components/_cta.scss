@@ -3,6 +3,10 @@
   align-items: center;
   color: $black;
 
+  cursor: pointer;
+
+  transition: opacity 0.3s ease-in-out;
+
   &--primary {
     text-transform: uppercase;
     letter-spacing: pxToRem(10);
@@ -12,5 +16,9 @@
   &__icon {
     margin-left: 2rem;
     margin-bottom: 0.3rem;
+  }
+
+  &:hover {
+    opacity: 0.35;
   }
 }

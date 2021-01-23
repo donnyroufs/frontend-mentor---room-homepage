@@ -1,9 +1,44 @@
 .hero {
-  background-image: url("../images/mobile-image-hero-1.jpg");
-  background-size: cover;
   height: 55vh;
 
-  @include ipad {
-    background-position: 20% 80%;
+  &__left {
+    background-image: url("../images/mobile-image-hero-1.jpg");
+    background-size: cover;
+    @include ipad {
+      background-position: 20% 80%;
+    }
+
+    @include ipad-pro {
+      background-image: url("../images/desktop-image-hero-1.jpg");
+    }
+
+    @include desktop {
+      position: relative;
+      flex: 6;
+    }
+  }
+
+  &__right {
+    @include desktop {
+      flex: 5;
+    }
+  }
+
+  &__left,
+  &__right {
+    height: 100%;
+  }
+
+  @include desktop {
+    display: flex;
+    height: 66vh;
+
+    &__content {
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
