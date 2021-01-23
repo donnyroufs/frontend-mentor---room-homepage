@@ -1,0 +1,24 @@
+.controls {
+  display: flex;
+  height: calc(100% - 100px);
+
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  &__prev,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $black;
+    height: 64px;
+    width: 64px;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $dark-gray;
+    }
+  }
+}

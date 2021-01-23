@@ -1,0 +1,15 @@
+.nav {
+  position: absolute;
+  background: $white;
+  height: 100px;
+  width: 100%;
+
+  z-index: 3;
+  transition: opacity 0.3s ease-in-out;
+
+  &--hide {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

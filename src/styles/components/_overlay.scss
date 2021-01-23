@@ -1,0 +1,13 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $black;
+  z-index: 2;
+  opacity: 0.6;
+
+  &--hide {
+    display: none;
+  }
+}

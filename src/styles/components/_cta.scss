@@ -1,0 +1,16 @@
+.cta {
+  display: flex;
+  align-items: center;
+  color: $black;
+
+  &--primary {
+    text-transform: uppercase;
+    letter-spacing: pxToRem(10);
+    font-weight: bold;
+  }
+
+  &__icon {
+    margin-left: 2rem;
+    margin-bottom: 0.3rem;
+  }
+}
