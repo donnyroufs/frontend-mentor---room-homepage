@@ -13,7 +13,7 @@
     opacity: 0;
   }
 
-  @include ipad-pro {
+  @include desktop {
     pointer-events: all;
     visibility: visible;
     opacity: 1;

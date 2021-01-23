@@ -16,6 +16,15 @@
     text-decoration: none;
     color: $black;
     font-size: pxToRem(12);
+
+    @include ipad {
+      font-size: pxToRem(14);
+    }
+
+    @include ipad-pro {
+      font-size: pxToRem(16);
+      margin-right: 2rem;
+    }
   }
 
   /*  TODO: animated border */

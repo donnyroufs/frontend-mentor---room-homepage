@@ -9,5 +9,9 @@
   &__logo {
     order: 2;
     height: 16px;
+
+    @include ipad-pro {
+      height: 20px;
+    }
   }
 }

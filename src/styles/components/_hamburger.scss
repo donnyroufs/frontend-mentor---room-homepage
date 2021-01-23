@@ -33,6 +33,10 @@
       &:nth-child(1) {
         width: 24px;
         transform: rotate(45deg) translate(3px, 3px);
+
+        @include ipad-pro {
+          width: 28px;
+        }
       }
 
       &:nth-child(2) {
@@ -43,14 +47,14 @@
       &:nth-child(3) {
         width: 24px;
         transform: rotate(-45deg) translate(10px, -10px);
+
+        @include ipad-pro {
+          width: 28px;
+        }
       }
       &:last-child {
         margin-bottom: 0;
       }
     }
-  }
-
-  @include ipad-pro {
-    display: none;
   }
 }
