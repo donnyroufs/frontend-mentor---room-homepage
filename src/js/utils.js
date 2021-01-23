@@ -7,5 +7,9 @@ export function createViewLayer() {
     lines: queryAll(".hamburger__line"),
     nav: query(".nav"),
     overlay: query(".overlay"),
+    imgContainer: query(".hero__left"),
+    prev: query(".controls__prev"),
+    next: query(".controls__next"),
+    description: query("#description"),
   };
 }
