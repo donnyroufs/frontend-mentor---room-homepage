@@ -44,6 +44,10 @@
     background: white;
     padding: 0 4rem 3rem 4rem;
 
+    &__text {
+      font-size: pxToRem(12);
+    }
+
     &__text--secondary {
       font-size: pxToRem(12);
     }
@@ -57,7 +61,7 @@
 
   @include desktop-large {
     &__title {
-      font-size: pxToRem(42);
+      font-size: pxToRem(38);
       margin-bottom: 2.5rem;
       &--secondary {
         font-size: pxToRem(12);
@@ -67,17 +71,13 @@
     }
 
     &__text {
-      font-size: pxToRem(18);
+      font-size: pxToRem(12);
 
       &--secondary {
         font-size: pxToRem(12);
       }
     }
 
-    padding: 0 5rem 3rem 5rem;
-  }
-
-  @include desktop-xl {
-    padding: 0 7.5rem 3rem 7.5rem;
+    padding: 0 6rem 3rem 6rem;
   }
 }

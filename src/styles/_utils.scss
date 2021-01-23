@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin desktop-xxl {
+  @media (min-width: 1919px) {
+    @content;
+  }
+}

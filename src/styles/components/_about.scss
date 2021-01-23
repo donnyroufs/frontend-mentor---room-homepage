@@ -34,11 +34,28 @@
       height: 100%;
     }
 
+    &_left {
+      flex: 1;
+    }
+
+    &__right {
+      flex: none;
+      width: 30%;
+    }
+
     &__content {
+      flex: 2;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 4rem 4rem 3rem 4rem;
+    }
+  }
+
+  @include desktop-xxl {
+    &__left,
+    &__right {
+      background-position: 50% 50%;
     }
   }
 }

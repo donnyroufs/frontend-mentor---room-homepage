@@ -29,6 +29,7 @@
   }
 
   @include desktop {
+    height: auto;
     position: absolute;
     bottom: 0;
     right: -188px;

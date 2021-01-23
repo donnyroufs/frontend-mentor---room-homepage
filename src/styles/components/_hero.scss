@@ -15,13 +15,16 @@
 
     @include desktop {
       position: relative;
-      flex: 6;
+      flex: 3;
     }
   }
 
   &__right {
     @include desktop {
-      flex: 5;
+      flex: none;
+      width: calc(30% + 188px);
+      // flex: none;
+      // width: 600px;
     }
   }
 
