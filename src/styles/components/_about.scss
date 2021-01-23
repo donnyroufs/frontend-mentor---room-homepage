@@ -1,0 +1,44 @@
+.about {
+  // height: 100%;
+
+  &__left,
+  &__right {
+    height: 266px;
+    background-repeat: no-repeat;
+  }
+
+  &__left {
+    background-image: url("../images/image-about-dark.jpg");
+    background-size: cover;
+  }
+
+  &__right {
+    background-image: url("../images/image-about-light.jpg");
+    background-size: cover;
+  }
+
+  @include ipad {
+    &__left,
+    &__right {
+      height: 500px;
+      flex: 2;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    height: 30vh;
+
+    &__left,
+    &__right {
+      height: 100%;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 4rem 3rem 4rem;
+    }
+  }
+}

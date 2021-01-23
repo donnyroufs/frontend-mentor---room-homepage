@@ -8,6 +8,12 @@
   &__title {
     font-size: pxToRem(26);
     margin-bottom: 0.35rem;
+
+    &--secondary {
+      text-transform: uppercase;
+      font-size: pxToRem(16);
+      letter-spacing: 0.2em;
+    }
   }
 
   &__text {
@@ -37,17 +43,37 @@
     flex: 2;
     background: white;
     padding: 0 4rem 3rem 4rem;
+
+    &__text--secondary {
+      font-size: pxToRem(12);
+    }
+
+    &__title--secondary {
+      font-size: pxToRem(12);
+      margin-bottom: 0.25rem;
+      align-self: flex-start;
+    }
   }
 
   @include desktop-large {
     &__title {
       font-size: pxToRem(42);
       margin-bottom: 2.5rem;
+      &--secondary {
+        font-size: pxToRem(12);
+        margin-bottom: 0.25rem;
+        align-self: flex-start;
+      }
     }
 
     &__text {
       font-size: pxToRem(18);
+
+      &--secondary {
+        font-size: pxToRem(12);
+      }
     }
+
     padding: 0 5rem 3rem 5rem;
   }
 

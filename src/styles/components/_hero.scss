@@ -1,7 +1,8 @@
 .hero {
-  height: 55vh;
+  min-height: fit-content;
 
   &__left {
+    height: 55vh;
     background-image: url("../images/mobile-image-hero-1.jpg");
     background-size: cover;
     @include ipad {
@@ -24,14 +25,9 @@
     }
   }
 
-  &__left,
-  &__right {
-    height: 100%;
-  }
-
   @include desktop {
     display: flex;
-    height: 66vh;
+    height: 70vh;
 
     &__content {
       height: 100%;
@@ -39,6 +35,10 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
+    }
+
+    &__left {
+      height: 100%;
     }
   }
 }
