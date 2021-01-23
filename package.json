@@ -2,7 +2,8 @@
   "name": "room-homepage",
   "version": "1.0.0",
   "scripts": {
-    "run:dev": "parcel src/index.html"
+    "run:dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "main": "index.js",
   "license": "MIT",
