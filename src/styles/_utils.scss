@@ -1,0 +1,17 @@
+@mixin ipad {
+  @media (min-width: 765px) {
+    @content;
+  }
+}
+
+@mixin ipad-pro {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}

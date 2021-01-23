@@ -12,4 +12,10 @@
     visibility: hidden;
     opacity: 0;
   }
+
+  @include ipad-pro {
+    pointer-events: all;
+    visibility: visible;
+    opacity: 1;
+  }
 }

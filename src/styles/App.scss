@@ -3,8 +3,9 @@
 @import "./normalize";
 @import "./variables";
 @import "./functions";
+@import "./utils";
 
-@import "./components//components-dir";
+@import "./components/components-dir";
 
 * {
   box-sizing: border-box;

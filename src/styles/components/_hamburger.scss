@@ -1,7 +1,7 @@
 .hamburger {
   position: absolute;
   top: 35px;
-  left: 32px;
+  left: 1.8rem;
   height: fit-content;
 
   z-index: 4;
@@ -48,5 +48,9 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  @include ipad-pro {
+    display: none;
   }
 }
